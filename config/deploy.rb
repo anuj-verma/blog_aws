@@ -9,11 +9,12 @@ require 'mina/git'
 #   repository   - Git repo to clone from. (needed by mina/git)
 #   branch       - Branch name to deploy. (needed by mina/git)
 
-set :application_name, 'foobar'
-set :domain, 'foobar.com'
-set :deploy_to, '/var/www/foobar.com'
-set :repository, 'git://...'
+set :application_name, 'blog_app'
+set :domain, '13.58.107.163'
+set :deploy_to, '/home/ec2-user/www'
+set :repository, 'git@github.com:anuj-verma/blog_aws.git'
 set :branch, 'master'
+set :user, 'ec2-user'
 
 # Optional settings:
 #   set :user, 'foobar'          # Username in the server to SSH to.
